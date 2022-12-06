@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+    <script src="https://kit.fontawesome.com/d70fcb709b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/createPost.css">
+    <link rel="stylesheet" href="./src/styles/followSug.css">
+    <link rel="stylesheet" href="./src/styles/posts.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header__container">
+            <h1 class="header__title">
+                TechPosters
+            </h1>
+            <span class="header__quitBtn">Sair</span>
+        </nav>
+    </header>
+
+    <div class="createPost__container">
+
+        <div class="createPost__header-user header__default">
+            <img src="src\assets\img\user1.svg" alt="User1">
+            <h3 class="createPost__header-username header__username">Samuel Leão</h3>
+            <span class="createPost__header-description card__description">Front end Engineer</span>
+        </div>
+
+        <form action="">
+            <input type="text" name="title" id="createPost__inputTitle" placeholder="Digitar título do post">
+            <textarea name="content" id="createPost__inputContent" cols="30" rows="10"
+                placeholder="Digitar descrição do post"></textarea>
+            <button type="submit" class="createPost__submitBtn">Postar</button>
+        </form>
+    </div>
+
+    <aside class="followSuggestion__container">
+        <div class="followSuggestion__box">
+            <h3 class="followSuggestion__container-title">Sugestões para você seguir</h3>
+            <ul class="followSuggestion__list">
+                <li class="followSuggestion_card">
+                    <div class="followSuggestion_card-header">
+                        <img src="src\assets\img\user3.svg" alt="User3">
+                        <h3 class="followSuggestion__username">Carlos Lima</h3>
+                        <span class="followSuggestion__description">UX e UI Designer</span>
+                    </div>
+                    <button class="followBtn">Seguindo</button>
+                </li>
+                <li class="followSuggestion_card">
+                    <div class="followSuggestion_card-header">
+                    <img src="src\assets\img\user6.svg" alt="User6">
+                    <h3 class="followSuggestion__username">Larissa Cardoso</h3>
+                    <span class="followSuggestion__description">UI Developer</span>
+                    </div>
+                    <button id="followBtn2">Seguir</button>
+                </li>
+                <li class="followSuggestion_card">
+                    <div class="followSuggestion_card-header">
+                        <img src="src\assets\img\user3.svg" alt="User3">
+                        <h3 class="followSuggestion__username">Carlos Lima</h3>
+                        <span class="followSuggestion__description">UX e UI Designer</span>
+                    </div>
+                    <button id="followBtn2">Seguir</button>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="posts__container">
+        <h2 class="posts__container-title">Posts</h2>
+
+        <article class="posts__card">
+
+            <div class="posts__card-header header__default">
+                <img src="src\assets\img\user1.svg" alt="User1">
+                <h3 class="posts__card-username header__username">Samuel Persuhn</h3>
+                <span class="posts__card-description card__description">Front end Engineer</span>
+            </div>
+
+            <div class="posts__card-post">
+                <h2 class="card__title">Como criar um interface simples e agradável utilizando boas práticas de design
+                </h2>
+                <p class="card__content">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+                    design pronto feito por um profissional de UI design.
+                </p>
+                <div class="card__interactions">
+                    <button class="card__openPostBtn">Abrir Post</button>
+                    <!-- <span class="card__likeBtn"><i class="fa-solid fa-heart"></i></span> -->
+                    <span class="card__likeBtn"><img src="./src/assets/img/heart-69-48.png" alt="" srcset=""
+                            class="card__likeBtn"></span>
+                    <span class="card__like-cont">25</span>
+                </div>
+
+            </div>
+
+        </article>
+        <article class="posts__card">
+
+            <div class="posts__card-header header__default">
+                <img src="src\assets\img\user2.svg" alt="User2">
+                <h3 class="posts__card-username header__username">Samuel Persuhn</h3>
+                <span class="posts__card-description card__description">Front end Engineer</span>
+            </div>
+
+            <div class="posts__card-post">
+                <h2 class="card__title">Empresa de Tecnologia da Informação abre vagas para programa de estágio
+                </h2>
+                <p class="card__content">A Generic Digital, empresa natalence especializada em Tecnologia da Informação,
+                    irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de
+                    agosto.
+                </p>
+                <button class="card__openPostBtn">Abrir Post</button>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span class="card__like-cont">25</span>
+
+            </div>
+
+        </article>
+        <article class="posts__card">
+
+            <div class="posts__card-header header__default">
+                <img src="src\assets\img\user4.svg" alt="User4">
+                <h3 class="posts__card-username header__username">Carla Maria</h3>
+                <span class="posts__card-description card__description">Back end Engineer</span>
+            </div>
+
+            <div class="posts__card-post">
+                <h2 class="card__title">Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar
+                </h2>
+                <p class="card__content">Para quem está começando na área de T.I, em pleno século 21 este conceito pode
+                    parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo,
+                    principalmente...
+                </p>
+                <button class="card__openPostBtn">Abrir Post</button>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span class="card__like-cont">19</span>
+
+            </div>
+
+        </article>
+
+        <article class="posts__card">
+
+            <div class="posts__card-header header__default">
+                <img src="src\assets\img\user5.svg" alt="User5">
+                <h3 class="posts__card-username header__username">Júlia Martins</h3>
+                <span class="posts__card-description card__description">Devop's</span>
+            </div>
+
+            <div class="posts__card-post">
+                <h2 class="card__title">NextJS como essa ferramenta revolucionou a maneira de desenvolver sites
+                </h2>
+                <p class="card__content">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+                    design pronto feito por um profissional de UI design.
+                </p>
+                <button class="card__openPostBtn">Abrir Post</button>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span class="card__like-cont">25</span>
+
+            </div>
+
+        </article>
+    </section>
+</body>
+
+</html>

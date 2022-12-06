@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.createPost__container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+
+.header__default{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    margin: 1rem;
+
+    margin: 65px 0 0 0;
+}
+
+.header__default > img{
+    position: absolute;
+    left: 0;
+    top: 12px;
+   
+    width: 40px;
+}
+
+img{
+    width: 40px
+}
+
+
+.header__username{
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.card__description{
+    font-size: 11px;
+
+    margin-left: 2rem;
+
+    padding: 8px 0;
+}
+
+.createPost__container form{
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+::placeholder{
+    color: var(--grey-300);
+    opacity: 0.8;
+}
+
+
+#createPost__inputTitle{
+    width: 98%;
+    height: 2.1rem;
+
+    border: var(--grey-200) 2px solid;
+    border-radius: var(--radius-default);
+
+    padding-left: 15px;
+
+    font-size: 12px;
+
+    font-family: 'Inter', sans-serif;
+}    
+
+#createPost__inputContent{
+    width: 98%;
+    height: 4.5rem;
+
+    border: var(--grey-200) 2px solid;
+    border-radius: var(--radius-default);
+
+    padding-left: 16px;
+    padding-top: 20px;
+
+    font-size: 12px;
+
+    font-family: 'Inter', sans-serif;
+}
+
+textarea{
+    resize: none;
+}
+
+.createPost__submitBtn{
+    position: absolute;
+
+    right: -4px;
+    bottom: -45px;
+    font-size: 11px;
+    color: var(--grey-300);
+
+    background-color: var(--grey-200);
+
+    padding: 8px;
+
+    border: none;
+
+    border-radius: var(--radius-default);
+}
+
+
+@media (min-width: 769px){
+    .createPost__container{
+        width: 40%;
+        
+        position: relative;
+
+        right: 9.5%;      
+
+    }
+
+
+
+    .createPost__submitBtn{
+        background-color: var(--blue-700);
+        color: var(--whiteFixed);
+    }
+
+}

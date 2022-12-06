@@ -1,0 +1,146 @@
+.followSuggestion__container{
+    display: flex;
+    flex-direction: column;
+    
+    width: 90%;
+
+    margin-top: 2rem;
+
+    gap: 3rem;
+}
+
+.followSuggestion__box{
+    display: flex;
+    flex-direction: column;
+    
+    width: 90%;
+
+    gap: 3rem;
+}
+
+.followSuggestion__container-title{
+    color: var(--grey-700);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.followSuggestion__list{
+    display: flex;
+
+    overflow-x:hidden;
+
+    flex-wrap: nowrap;
+
+    gap: 4rem;
+
+    overflow-x:hidden;
+
+    box-shadow: inset  -45px 0px 5px var(--whiteFixed);
+}
+
+
+.followSuggestion_card, .followSuggestion_card-header{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+
+.followSuggestion_card > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+    width: 40px;
+}
+
+.followSuggestion_card-header > img{
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+    width: 40px;
+}
+
+.followSuggestion__username{
+    font-size: 15px;
+    font-weight: 700;
+    
+    margin-left: 3rem;
+    width: 100%;
+}
+
+.followSuggestion__description{
+    font-size: 11px;
+
+    margin-left: 3rem;
+
+    padding: 8px 0;
+    width: 100%;
+}
+
+.followSuggestion_card button{
+    margin-top: .5rem;
+    width: 65px;
+
+    background-color: var(--blue-500);
+
+    border: none;
+
+    color: var(--whiteFixed);
+    font-size: 11px;
+
+    padding: 5px;
+
+    border-radius: var(--radius-default);
+}
+
+#followBtn2{
+    margin-top: .5rem;
+    width: 50px;
+
+    background-color: transparent;
+
+    border: 1px solid var(--grey-700);
+
+    color: var(--grey-700);
+    font-size: 11px;
+
+    padding: 4px;
+
+    border-radius: var(--radius-default);
+}
+
+
+@media (min-width: 769px){
+    .followSuggestion__container{
+        
+        position: absolute;
+        right: 60px;
+        top: 45px;
+
+        height: 400px;
+        width: 285px;
+    }
+
+    .followSuggestion__box{
+        position: sticky;
+    }
+
+    .followSuggestion__list{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .followSuggestion_card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .followSuggestion_card button{
+        height: 20px;
+    }
+}

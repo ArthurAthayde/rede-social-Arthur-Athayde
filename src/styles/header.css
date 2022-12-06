@@ -1,0 +1,34 @@
+header{
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    
+    padding: 1rem;
+
+    background-color: var(--grey-700);
+    
+    height: 23px;
+    width: 100%;
+   
+z-index: 1;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 2rem;
+}
+
+.header__title{
+    color: var(--whiteFixed );
+    font-size: 15px;
+}
+
+.header__quitBtn{
+    color: var(--whiteFixed);
+    font-size: 10px;
+}
