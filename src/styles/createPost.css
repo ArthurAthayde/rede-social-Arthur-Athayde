@@ -6,10 +6,6 @@ body{
 
 }
 
-main{
-    width: 100%;
-    height: 100%;
-}
 
 .createPost__container{
     display: flex;
@@ -132,7 +128,7 @@ textarea{
         
         position: relative;
 
-        right: 9.5%;      
+        right: 25%;      
 
     }
 
